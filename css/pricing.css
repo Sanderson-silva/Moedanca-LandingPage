@@ -1,0 +1,175 @@
+@import url('variables.css');
+
+/* --- SEÇÃO DE PREÇOS --- */
+#precos {
+  padding: 8rem 1.5rem;
+  background: var(--cor-branco);
+}
+
+.precos-container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.precos-container h2 {
+  margin-bottom: 1rem;
+  color: var(--cor-verde-floresta);
+  font-size: clamp(2.25rem, 6vw, 3rem);
+  font-weight: var(--peso-extra-bold);
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.highlight-moedanca {
+  color: var(--cor-dourado-premium);
+  font-weight: var(--peso-black);
+  text-shadow: 2px 2px 4px rgba(var(--cor-verde-floresta-rgb), 0.2);
+}
+
+.precos-subtitulo {
+  max-width: 650px;
+  margin: 0 auto 5rem;
+  color: var(--cor-cinza-texto);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* --- TABELA DE PREÇOS --- */
+.preco-tabela-wrapper {
+  margin-bottom: 4rem;
+  padding: 4rem 3rem;
+  border-radius: var(--borda-radius-lg);
+  border: 1px solid rgba(var(--cor-dourado-premium-rgb), 0.1);
+  background: var(--cor-verde-floresta);
+  box-shadow: var(--sombra-forte);
+  overflow-x: auto;
+}
+
+.preco-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+  table-layout: fixed;
+}
+
+.preco-tabela thead th {
+  padding: 1.5rem 1rem 2.5rem;
+  border-bottom: 2px solid rgba(var(--cor-dourado-premium-rgb), 0.3);
+  font-size: 1.2rem;
+  font-weight: var(--peso-extra-bold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.preco-tabela th.coluna-recursos {
+  width: 40%;
+  color: #f8f9fa;
+  text-align: left;
+}
+
+.preco-tabela th.coluna-gratis,
+.preco-tabela td.valor-gratis {
+  width: 30%;
+  color: var(--cor-branco);
+}
+
+.preco-tabela th.coluna-premium {
+  width: 30%;
+  color: var(--cor-dourado-premium);
+  font-size: 1.3rem;
+  font-weight: var(--peso-black);
+}
+
+.preco-tabela tbody tr {
+  border-bottom: 1.5px solid var(--cor-borda-tabela);
+}
+
+.preco-tabela tbody tr:last-child {
+  border-bottom: none;
+}
+
+.preco-tabela td {
+  padding: 2.2rem 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.preco-tabela td.recurso {
+  color: #f8f9fa;
+  font-weight: var(--peso-medium);
+  text-align: left;
+}
+
+.preco-tabela td.valor-premium {
+  color: var(--cor-dourado-premium);
+  font-size: 1.2rem;
+  font-weight: var(--peso-extra-bold);
+  letter-spacing: 0.8px;
+}
+
+/* --- INVESTIMENTO & CTA --- */
+.precos-investimento {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.precos-investimento td {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.precos-investimento .valor-premium {
+  font-size: 1.8rem;
+  text-shadow: 0 0 20px rgba(var(--cor-dourado-premium-rgb), 0.2);
+}
+
+.precos-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.precos-inspiracao {
+  max-width: 400px;
+  color: #777777;
+  font-size: 1.1rem;
+  font-weight: var(--peso-medium);
+  font-style: italic;
+}
+
+.btn-assinar {
+  display: inline-block;
+  padding: 1.4rem 4rem;
+  border-radius: 18px;
+  background: var(--cor-dourado-premium);
+  color: var(--cor-verde-floresta);
+  font-size: 1.2rem;
+  font-weight: var(--peso-black);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 12px 24px rgba(var(--cor-dourado-premium-rgb), 0.25);
+  transition: var(--transicao-suave);
+  animation: btn-bobbing 3s ease-in-out infinite;
+}
+
+.btn-assinar:hover {
+  background: #e5be45;
+  transform: translateY(-2px) scale(1.05);
+  filter: brightness(1.1);
+  box-shadow: 0 18px 36px rgba(var(--cor-dourado-premium-rgb), 0.4);
+}
+
+@keyframes btn-bobbing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

@@ -1,0 +1,227 @@
+/* --- RESPONSIVIDADE GERAL --- */
+
+/* Mobile Breakpoint (Até 768px) */
+@media (max-width: 768px) {
+  /* Header & Navigation */
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .nav-links {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background: var(--cor-verde-floresta);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2.5rem;
+    padding-top: 8rem;
+    transition: var(--transicao-suave);
+    z-index: 1050;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links.nav-active {
+    right: 0;
+  }
+
+  .menu-close-btn {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--cor-dourado-premium);
+    font-family: var(--fonte-principal);
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .mobile-only-cta {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 130px 5% 40px;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-image {
+    position: relative;
+    z-index: 10;
+    max-width: 320px;
+    margin: 0;
+  }
+
+  /* Pricing Section */
+  #precos {
+    padding: 5rem 1rem;
+  }
+
+  .preco-tabela-wrapper {
+    padding: 1.5rem 0.5rem;
+    border-radius: 20px;
+    overflow-x: visible;
+  }
+
+  .preco-tabela {
+    min-width: 100%;
+    table-layout: auto;
+  }
+
+  .preco-tabela th, 
+  .preco-tabela td {
+    padding: 1rem 0.1rem;
+    font-size: 0.7rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .preco-tabela thead th {
+    padding-bottom: 1rem;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  .preco-tabela th.coluna-premium,
+  .preco-tabela td.valor-premium {
+    font-size: 0.8rem;
+  }
+
+  .precos-investimento .valor-premium {
+    font-size: 1.1rem !important;
+  }
+
+  .btn-assinar {
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+  }
+
+  /* Footer */
+  .footer-main-new {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    min-height: auto;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer-col-brand {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-col-about {
+    order: 2;
+    align-self: center;
+    max-width: 100%;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .footer-educational-text,
+  .footer-tech-text {
+    text-align: center;
+  }
+
+  .footer-col-contact {
+    order: 3;
+    align-self: center;
+    margin-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .footer-links-portfolio {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  /* Utilities */
+  .custom-shape-divider svg {
+    height: 40px;
+  }
+}
+
+/* Desktop Breakpoint (A partir de 769px) */
+@media (min-width: 769px) {
+  .hero-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .hero-text {
+    flex: 1.2;
+    padding: 0;
+    text-align: left;
+  }
+
+  .hero-text h1 {
+    font-size: 4rem;
+  }
+
+  .hero-image {
+    flex: 1;
+    max-width: 500px;
+  }
+
+  .footer-educational-text {
+    transform: translateY(15px);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .card-wrapper,
+  .card-inner,
+  .reveal,
+  .btn-assinar {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

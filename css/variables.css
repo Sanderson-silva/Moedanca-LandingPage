@@ -1,0 +1,43 @@
+:root {
+  /* Cores Principais */
+  --cor-verde-floresta: #013220;
+  --cor-verde-floresta-rgb: 1, 50, 32;
+  --cor-dourado-premium: #D4AF37;
+  --cor-dourado-premium-rgb: 212, 175, 55;
+  --cor-verde-menta-pastel: #F0FFF4;
+  
+  /* Cores de Apoio */
+  --cor-branco: #ffffff;
+  --cor-preto-texto: #1A1A1A;
+  --cor-cinza-texto: #555555;
+  --cor-cinza-claro: #bdc3c7;
+  --cor-cinza-escuro: #7f8c8d;
+  --cor-borda-tabela: rgba(var(--cor-dourado-premium-rgb), 0.15);
+
+  /* Tipografia */
+  --fonte-principal: 'Poppins', system-ui, sans-serif;
+  --fonte-apoio: 'Inter', system-ui, sans-serif;
+  --peso-regular: 400;
+  --peso-medium: 500;
+  --peso-semibold: 600;
+  --peso-bold: 700;
+  --peso-extra-bold: 800;
+  --peso-black: 900;
+
+  /* Espaçamentos */
+  --espacamento-xs: 0.25rem;
+  --espacamento-sm: 0.5rem;
+  --espacamento-md: 1rem;
+  --espacamento-lg: 2rem;
+  --espacamento-xl: 4rem;
+  --espacamento-xxl: 8rem;
+
+  /* Efeitos e Bordas */
+  --borda-radius: 12px;
+  --borda-radius-lg: 28px;
+  --borda-radius-pill: 50px;
+  --sombra-suave: 0 10px 30px rgba(var(--cor-verde-floresta-rgb), 0.18);
+  --sombra-forte: 0 30px 60px -15px rgba(var(--cor-verde-floresta-rgb), 0.45);
+  --transicao-padrao: all 0.3s ease;
+  --transicao-suave: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
